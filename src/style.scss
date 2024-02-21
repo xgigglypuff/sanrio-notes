@@ -1,0 +1,272 @@
+/* RockoFLF Regular */
+@font-face {
+  font-family: "RockoFLF";
+  src: url('fonts/rockoflf.ttf');
+  src: url('fonts/rockoflf.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* RockoFLF Bold */
+@font-face {
+  font-family: "RockoFLF";
+  src: url('fonts/rockoflf-bold.ttf');
+  src: url('fonts/rockoflf-bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* RockoFLF Bolder */
+@font-face {
+  font-family: "RockoFLF";
+  src: url('fonts/rockoultraflf.ttf');
+  src: url('fonts/rockoultraflf.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* RockoFLF Boldest */
+@font-face {
+  font-family: "RockoFLF";
+  src: url('fonts/rockoultraflf-bold.ttf');
+  src: url('fonts/rockoultraflf-bold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+body, html {
+    font-family: 'RockoFLF';
+    height: 100%;
+    width: 100%;
+    background-color: #f5f5f5;
+  }
+
+  #main {
+    width: 100%;
+  }
+
+  #sanrio-notes-logo {
+    width: 400px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 195px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  :root {
+    text-size-adjust: 100%;
+  }
+
+  .add-note-bar {
+    margin: 0px 0px 30px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #bow-icon {
+    max-width: 35px;
+    margin-right: 290px;
+    margin-bottom: 11px;
+    z-index: 1;
+    position: absolute;
+  }
+
+  .add-note-bar > input {
+    border-radius: 5px;
+    border-style: solid;
+    font-family: 'RockoFLF';
+    width: 240px;
+    z-index: 0;
+    margin: 30px 3px 10px 15px;
+    height: 25px;
+    font-size: 17px;
+  }
+
+  .add-note-bar > button {
+    font-family: "RockoFLF";
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 14px;
+    height: fit-content;
+    padding: 5px;
+    margin-top: 15px;
+  }
+
+  .add-note-bar > button:hover {
+    cursor: pointer;
+  }
+
+  .notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+  }
+
+  h3 {
+    margin: 0px 4px 0.5px 12px;
+    font-weight: 600;
+    font-size: 18px;
+    word-break: break-word;
+  }
+
+  .note-text > p {
+    font-size: 14px;
+    font-weight: 400;
+    word-break: break-word;
+    margin-left: 15px;
+    margin-right: 8px;
+  }
+
+  .note {
+    border-style: solid;
+    border-radius: 6px;
+    padding-left: 4px;
+    padding-right: 4px;
+    max-width: 300px;
+    min-width: 300px;
+    box-shadow: 0 2px 8px 0 rgba(82, 69, 49, 0.3), 0 3px 20px 0 rgba(82, 69, 49, 0.29);
+    background-color: white;
+    margin-top: 25px;
+    display: flex;
+    min-height: 75px;
+    padding-bottom: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 25px;
+  }
+
+  .note-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1px 0.5px 1px 0.5px;
+  }
+
+  .left-container {
+    display: flex;
+  }
+
+  .sanrio-color-icons {
+    display: flex; 
+    flex-direction: row;
+    margin: 1px 1px 1px 1px;
+  }
+
+  .sanrio-color-icons > img {
+    width: 25px;
+    cursor: pointer;
+  }
+
+  #hello-kitty-emoji {
+    width: 25px;
+    height: 25px;
+  }
+
+  #my-melody-emoji {
+    width: 22px;
+  }
+
+  .top-right-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .note-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .edit-button {
+    margin: 5px 4px 2px 10px;
+  }
+
+  .edit-button:hover {
+    cursor: pointer;
+  }
+
+  .save-button {
+    margin: 6px 4px 2px 4px;
+  }
+
+  .save-button:hover {
+    cursor: pointer;
+  }
+
+  .delete-button {
+    margin: 2px 4px 5px 4px;
+  }
+
+  .delete-button:hover {
+    cursor: pointer;
+  }
+
+  .move-button {
+    margin: 5px 4px 2px 4px;
+  }
+
+  .move-button:hover {
+    cursor: pointer;
+  }
+
+  .edit-mode-title {
+    border-style: dotted;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .note-img-edit {
+    margin-top: 5px;
+    width: 200px;
+    height: 40px;
+    border-style: dotted;
+    border-radius: 6px;
+  }
+
+  .note-text-edit {
+    margin-top: 5px;
+    margin-bottom: 0;
+    width: 250px;
+    height: 50px;
+    border-style: dotted;
+    border-radius: 6px;
+  }
+
+  .note-img > p > img {
+    max-width: 270px;
+    margin-left: 12px;
+    border-radius: 4px;
+  }
+
+  .clear-button {
+    font-family: "RockoFLF";
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 14px;
+    height: fit-content;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
+
+  .clear-button:hover {
+    cursor: pointer;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
